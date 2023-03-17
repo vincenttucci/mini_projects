@@ -2,6 +2,16 @@ import openai
 import tkinter as tk
 from tkinter import ttk,scrolledtext
 
+'''
+VERSION 2.1
+
+This program is desinged to take in a series of inputs 
+about a job and returns an optimal cover letter for the job position.
+
+The project is still being refined and is not intended to be used solely 
+to generate a cover letter to be used in the workplace.
+'''
+
 openai.api_key = "YOUR_API_KEY_HERE"
 
 '''
@@ -11,9 +21,9 @@ This data is needed in order for the generated
 response to be more tailored towards your experience.
 '''
 user_data = {
-    "work_experience": "Software Developer at XYZ Corp (2018-2022)",
-    "education": "Bachelor of Science in Computer Science from ABC University (2014-2018)",
-    "technical_skills": "Python, JavaScript, C++, Java, HTML, CSS, React, Node.js",
+    "work_experience": "WORK EXPERIENCE HERE",
+    "education": "EDUCATION EXPERIENCE HERE",
+    "technical_skills": "TECHNICAL SKILLS HERE",
 }
 
 def generate_cover_letter():
